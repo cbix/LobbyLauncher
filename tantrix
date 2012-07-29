@@ -1,0 +1,4 @@
+#!/bin/bash
+UN="$1"
+PW="`zenity --entry --text="Passwort für $UN:" --hide-text`"
+exec appletviewer "http://tantrix.com/cgi-bin/gs_logon.cgi?pname=$UN&passwd=$PW&language=german"
